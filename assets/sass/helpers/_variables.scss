@@ -1,0 +1,33 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Inter:wght@400;500;600&display=swap');
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font:'Inter', sans-serif; 
+$heading-font:'Chewy'; 
+
+
+// color
+$dark-gray: #1E3446;
+$body-color: #687693;
+$white: #fff;
+$light: #F8F6FF;
+$black: #000;
+$small-gray: #F2FEFB;
+$cyan: #A79F98;
+$red: #D6547D;
+
+$theme-primary-color: #EF7C40;
+$theme-primary-color-s2: #8072DB;
+$theme-primary-color-s3: #38B69A;
+$body-bg-color: #fff;
+$section-bg-color: #DEDEDE;
+$text-color: #6e6e6e;
+$text-light-color: #9AA1A7;
+$heading-color: $dark-gray;
+$border-color: #ebebeb;
+$border-color-s2: #F2E7D4;
