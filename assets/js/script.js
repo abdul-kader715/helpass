@@ -500,11 +500,22 @@
         = Testimonial SLIDER
     -------------------------------------------*/
  
+    $('.event-slider').slick({
+        vertical: true,
+        dots: false,
+        arrows:true,
+        slidesToShow: 3,
+        
+      });
+
+
+    /*------------------------------------------
+        = Testimonial SLIDER
+    ------------------------------------------*/
     $('.testimonial-slider').slick({
         vertical: true,
         dots: false,
         arrows:true,
-        
       });
 
     /*------------------------------------------
@@ -547,6 +558,8 @@
             }
         });
     }
+
+
     /*------------------------------------------
         = Testimonial SLIDER
     -------------------------------------------*/
@@ -566,6 +579,41 @@
 
 
 
+    /*------------------------------------------
+        = POST SLIDER
+    -------------------------------------------*/
+    if ($(".causes-slider".length)) {
+        $(".causes-slider").owlCarousel({
+            mouseDrag: false,
+            smartSpeed: 500,
+            margin: 30,
+            loop: true,
+            nav: true,
+            navText: ['<span class="left-arrow"></span>', '<span class="right-arrow"></span>'],
+            dots: false,
+            items: 3,
+            responsive:{
+                0:{
+                    items:1,
+                    dots:true,
+                },
+                700:{
+                    items:2,
+                    dots:true,
+                },
+                991:{
+                    items:2,
+                    nav:true,
+                    dots:true,
+                },
+                992:{
+                    items:3,
+                    dots:true,
+                    nav:true
+                }
+            }
+        });
+    }
     /*------------------------------------------
         = POST SLIDER
     -------------------------------------------*/
