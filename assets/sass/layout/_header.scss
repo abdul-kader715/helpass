@@ -1483,3 +1483,128 @@
 		padding: 20px 10px;
 	}
 }
+
+/* wpo-site-header-s2 */
+.wpo-site-header-s2{
+
+	.header-right .search-toggle-btn {
+		background-color: rgb(255 255 255 / 55%);
+	}
+	
+	@media screen and (min-width: 992px) {
+	
+		.wpo-site-header .navigation.sticky-header {
+
+			.header-right .search-toggle-btn {
+				background-color: rgba(206, 206, 206, 0.55);
+			}
+		}
+	}
+
+}
+
+/* wpo-site-header-s3 */
+
+.wpo-site-header-s3 {
+
+	.wpo-site-header {
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			content: '';
+			height: 100%;
+			background: $theme-primary-color;
+			width: 35%;
+			clip-path: polygon(10% 0, 100% 0, 100% 100%, 6% 100%, 0 37%);
+
+			@media (max-width:1399px) {
+				right: -50px;
+			}
+
+			@media (max-width:991px) {
+				display: none;
+			}
+		}
+
+		.header-right .search-toggle-btn {
+			background-color: rgb(255 255 255 / 55%);
+		}
+
+		.header-right .close-form {
+
+			.theme-btn {
+				background: $theme-primary-color-s3;
+
+				&::after {
+					background: darken($theme-primary-color-s3, 8%);
+					opacity: 0;
+				}
+
+				&:hover {
+					background: darken($theme-primary-color-s3, 5%);
+				}
+
+			}
+		}
+
+
+	}
+
+	@media screen and (min-width: 992px) {
+
+		.wpo-site-header #navbar>ul>li>a {
+			color: $white;
+
+			&:hover {
+				color: $theme-primary-color;
+			}
+		}
+
+		.wpo-site-header .navigation.sticky-header {
+			#navbar>ul>li>a {
+				color: $dark-gray;
+
+				&:hover {
+					color: $theme-primary-color;
+				}
+			}
+
+			.header-right .search-toggle-btn {
+				background-color: rgba(206, 206, 206, 0.55);
+			}
+		}
+	}
+}
+
+/* wpo-site-header-s4 */
+.wpo-site-header-s4 {
+	.header-right .search-toggle-btn {
+		background-color: rgb(255 255 255 / 55%);
+	}
+
+	@media screen and (min-width: 992px) {
+
+		.wpo-site-header #navbar>ul>li>a {
+			color: $white;
+
+			&:hover {
+				color: $theme-primary-color;
+			}
+		}
+
+		.wpo-site-header .navigation.sticky-header {
+			#navbar>ul>li>a {
+				color: $dark-gray;
+
+				&:hover {
+					color: $theme-primary-color;
+				}
+			}
+
+			.header-right .search-toggle-btn {
+				background-color: rgba(206, 206, 206, 0.55);
+			}
+		}
+	}
+}

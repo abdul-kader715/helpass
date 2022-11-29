@@ -499,14 +499,35 @@
     /*------------------------------------------
         = Testimonial SLIDER
     -------------------------------------------*/
- 
+
     $('.event-slider').slick({
         vertical: true,
         dots: false,
-        arrows:true,
+        arrows: true,
         slidesToShow: 3,
-        
-      });
+        responsive: [
+
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: true,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
+    });
 
 
     /*------------------------------------------
@@ -515,8 +536,25 @@
     $('.testimonial-slider').slick({
         vertical: true,
         dots: false,
-        arrows:true,
-      });
+        arrows: true,
+        responsive: [
+
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                }
+            }
+        ]
+    });
 
     /*------------------------------------------
         = Testimonial SLIDER
@@ -530,6 +568,7 @@
             autoplayHoverPause: true,
             dots: true,
             nav: false,
+            navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
             responsive: {
                 0: {
                     items: 1,
@@ -547,6 +586,10 @@
                     items: 2,
                 },
 
+                992: {
+                    items: 3
+                },
+
                 1200: {
                     items: 3
                 },
@@ -559,6 +602,37 @@
         });
     }
 
+    /*------------------------------------------
+            = PARTNERS SLIDER
+    -------------------------------------------*/
+    if ($(".partners-slider").length) {
+        $(".partners-slider").owlCarousel({
+            autoplay: false,
+            smartSpeed: 300,
+            margin: 30,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                550: {
+                    items: 2
+                },
+
+                992: {
+                    items: 3
+                },
+
+                1300: {
+                    items: 5
+                }
+            }
+        });
+    }
 
     /*------------------------------------------
         = Testimonial SLIDER
@@ -592,24 +666,24 @@
             navText: ['<span class="left-arrow"></span>', '<span class="right-arrow"></span>'],
             dots: false,
             items: 3,
-            responsive:{
-                0:{
-                    items:1,
-                    dots:true,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: true,
                 },
-                700:{
-                    items:2,
-                    dots:true,
+                700: {
+                    items: 2,
+                    dots: true,
                 },
-                991:{
-                    items:2,
-                    nav:true,
-                    dots:true,
+                991: {
+                    items: 2,
+                    nav: true,
+                    dots: true,
                 },
-                992:{
-                    items:3,
-                    dots:true,
-                    nav:true
+                992: {
+                    items: 3,
+                    dots: true,
+                    nav: true
                 }
             }
         });

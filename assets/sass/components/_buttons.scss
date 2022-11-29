@@ -98,7 +98,50 @@
 	}
 }
 
+.theme-btn-s3 {
+	background: $theme-primary-color-s3;
+	color: $white;
+	display: inline-block;
+	padding: 15px 55px;
+	border: 0;
+	font-family: $heading-font;
+	text-transform: capitalize;
+	z-index: 1;
+	position: relative;
+	font-weight: 400;
+	font-size: 19px;
+	overflow: hidden;
 
+	&:after {
+		position: absolute;
+		content: '';
+		top: 95%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: all .3s ease-in-out;
+		background: $theme-primary-color;
+		opacity: 1;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: $white;
+		&::after{
+			top: 0%;
+		}
+	}
+
+
+	@include media-query(991px) {
+		font-size: 18px;
+	}
+
+	@include media-query(767px) {
+		padding: 12px 20px;
+		font-size: 16px;
+	}
+}
 
 .view-cart-btn {
 	@extend .theme-btn;
