@@ -19,48 +19,45 @@ Version:        1.0.0
 
 3. content
 	3.1 wpo-hero-slider
-	3.2 wpo-features-section
-	3.3 wpo-contact-section
-	3.4 wpo-service-section
-	3.5 wpo-case-section
-	3.6 wpo-testimonials-section
-	3.7 wpo-team-section
-	3.8 wpo-consultancy-section
-	3.9 wpo-blog-section
+	3.2 helpass-about-section
+	3.3 helpass-causes-section
+	3.4 helpass-team-section
+	3.5 helpass-event-section
+	3.6 wpo-fun-fact-section
+	3.7 helpass-testimonial-section 
+	3.8 wpo-blog-section
 
 4. wpo-footer
 
 5. Home-style-2
-   5.1	wpo-features-section-s2
-   5.2	wpo-about-section
-   5.3	wpo-service-section-s2
-   5.4	wpo-fun-fact-section
+   5.1 helpas-service-section 
+   5.2 helpass-about-section-s2
+   5.3 helpass-causes-section-s2
+   5.4 helpass-team-section-s2
+   5.5 helpass-event-section-s2
+   5.6 wpo-partners-section
+   5.7 wpo-cta-section
+   5.8 wpo-blog-section-s2
 
-6. wpo-Attorney-single
+6. cause-single-page
 
-7. wpo-service-single-section
+8. wpo-service-single-section
 
 8. wpo-case-section
 
-9. wpo-cart-page-style
+9. volunteer-page
 
-10. wpo-checkout-page-style
+10. event-details-page
 
-11. wpo-shop-page
+11. wpo-blog-pg-section
 
-12. wpo-shop-single-page
+12. wpo-blog-single-section
 
-13. wpo-pricing-page
+13. login-design
 
-14. wpo-faq-page
+14. wpo-contact-pg-section
 
-15. wpo-blog-pg-section
-
-16. wpo-blog-single-section
-
-17. wpo-contact-pg-section
-
-18. error-404-section
+15. error-404-section
 
 ----------------------------------------------------------------*/
 
@@ -101,10 +98,23 @@ Version:        1.0.0
 @import "page/home-default";
 @import "page/home-style2";
 
+@import "page/cause-single";
 
-@import "page/_blog";
+@import "page/service";
 
-@import "page/_blog-single";
+@import "page/team";
+
+@import "page/event-single";
+
+
+@import "page/blog";
+@import "page/blog-single";
+
+@import "page/auth-page";
+
+@import "page/contact";
+
+@import "page/error-404";
 
 
 

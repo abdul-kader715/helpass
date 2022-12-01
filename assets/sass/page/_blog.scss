@@ -1,6 +1,6 @@
 
 /*--------------------------------------------------------------
-15. wpo-blog-pg-section
+11. wpo-blog-pg-section
 --------------------------------------------------------------*/
 .wpo-blog-pg-section {
 	.wpo-blog-content {
@@ -99,10 +99,9 @@
 
 	.post {
 		h3 {
-			font-size: 34px;
-			font-size: calc-rem-value(34);
+			font-size: 32px;
 			line-height: 1.2em;
-			font-weight: 700;
+			font-weight: 400;
 			margin: -0.27em 0 0.7em;
 			font-family: $heading-font;
 
