@@ -810,6 +810,12 @@
 
                 phone: "required",
 
+                adress: "required",
+
+                service: "required",
+
+                note: "required",
+
                 subject: {
                     required: true
                 }
@@ -821,6 +827,9 @@
                 name: "Please enter your name",
                 email: "Please enter your email address",
                 phone: "Please enter your phone number",
+                adress: "Please enter your phone adress",
+                service: "Please enter your phone service option",
+                note: "Please enter your phone text",
                 subject: "Please select your contact subject"
             },
 

@@ -1001,18 +1001,21 @@
 				padding: 35px 20px;
 				display: block;
 				color: #232f4b;
-				font-weight: 400;
+				font-weight: 500;
 				position: relative;
-				font-family: $heading-font;
-				text-transform: uppercase;
+				font-family: $base-font;
+				text-transform: capitalize;
 
 				@media(max-width:1870px) {
 					padding: 35px 18px;
 				}
 
-				@media(max-width:1199px) {
+				@media(max-width:1399px) {
 					padding: 30px 14px;
 					font-size: 15px;
+				}
+				@media(max-width:1199px) {
+					padding: 30px 7px;
 				}
 
 			}
@@ -1036,10 +1039,10 @@
 				display: block;
 				padding: 10px 15px;
 				color: $dark-gray;
-				position: relative;
 				overflow: hidden;
-				font-weight: 400;
-				font-family: $heading-font;
+				font-weight: 500;
+				position: relative;
+				font-family: $base-font;
 
 				&:after {
 					position: absolute;
